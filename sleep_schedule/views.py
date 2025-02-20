@@ -72,3 +72,5 @@ def generate_sleep_schedule(request):
             return JsonResponse({"error": str(e)}, status=400)
     
     return JsonResponse({"error": "Invalid request"}, status=400)
+def home(request):
+    return JsonResponse({"message": "Welcome to the Sleep Scheduler API"})
